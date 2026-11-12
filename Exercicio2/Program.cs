@@ -36,11 +36,11 @@ int[,] GerarMatrizInvertida(int[,] matrizOrigem, int[,] matrizInvertida)
 
 int[,] GerarMatrizInversa(int[,] matrizOrigem, int[,] matrizInversa)
 {
-    for (int i = linha - 1; i >= 0; i--)
+    for (int i = 0; i < linha; i++)
     {
-        for (int j = coluna - 1; j >= 0; j--)
+        for (int j = 0; j < coluna; j++)
         {
-            matrizInversa[i, j] = matrizOrigem[i, j];
+            matrizInversa[i, j] = matrizOrigem[(linha - 1) - i, (coluna - 1) - j];
         }
         Console.WriteLine(" ");
     }
@@ -60,18 +60,7 @@ void MostrarMatriz(int[,] matriz, int linha, int coluna)
 
 }
 
-void MostrarMatrizInversa(int[,] matriz, int linha, int coluna)
-{
-    for (int i = linha - 1; i >= 0; i--)
-    {
-        for (int j = coluna - 1; j >= 0; j--)
-        {
-            Console.Write($"[{matriz[i, j]}] ");
-        }
-        Console.WriteLine(" ");
-    }
 
-}
 
 PopularMatriz();
 matriz2 = GerarMatrizInvertida(matriz1,matriz2);
@@ -80,4 +69,4 @@ MostrarMatriz(matriz1, linha, coluna);
 Console.WriteLine(" ");
 MostrarMatriz(matriz2, coluna, linha);
 Console.WriteLine(" ");
-MostrarMatrizInversa(matriz3, linha, coluna);
+MostrarMatriz(matriz3, linha, coluna);
