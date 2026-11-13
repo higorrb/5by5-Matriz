@@ -42,7 +42,7 @@ void AdicionarMedias(string[,] matriz)
         {
             contador += float.Parse(matriz[i, j]);
         }
-        matriz[i, 5] = (contador/4).ToString();
+        matriz[i, 5] = (contador/4.0).ToString("F2");
     }
 }
 
@@ -73,7 +73,7 @@ void MostrarMatriz(string[,] matriz, int linha, int coluna)
     {
         for (int j = 0; j < coluna; j++)
         {
-            Console.Write($"[{matriz[i, j]}] ");
+            Console.Write($"[{matriz[i, j]}] \t");
         }
         Console.WriteLine(" ");
     }
