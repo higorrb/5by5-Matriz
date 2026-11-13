@@ -2,4 +2,6 @@
   <Project Path="Conceito/Conceito.csproj" />
   <Project Path="Exercicio1/Exercicio1.csproj" />
   <Project Path="Exercicio2/Exercicio2.csproj" />
+  <Project Path="Exercicio3-CalculosMatrizQuadrada/Exercicio3-CalculosMatrizQuadrada.csproj" Id="cc985273-2b95-4b93-ba07-31824f284881" />
+  <Project Path="Exercicio4-boletim/Exercicio4-boletim.csproj" Id="b4817087-7ac8-42fb-9b63-d1ea005ff9ae" />
 </Solution>
